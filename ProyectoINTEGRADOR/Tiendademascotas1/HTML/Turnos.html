@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="keywords" content="perros, gatos, mascostas, veterinaria" />
+    <meta name="description" content="Tienda de mascotas Happy4Pet" />
+    <meta name="author" content="Grupo 1" />
+    <meta name="robot" content="index" />
+    <link rel="stylesheet" href="../STATIC/CSS/Turnos.css"/>
+    <title>Turnos</title>
+    <link rel="icon" type="image/x-icon" href="../STATIC/IMG/michi.ico" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Tiendademascotas1/index.html" class="logo">
+               <img src="../STATIC/IMG/michi.png" alt="Gatito" width="50px" />
+                <h1>Happy4Pet</h1></a>
+                <ul class="nav">
+                    <li>
+                        <a href="../index.html" class="nav-links">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="Servicios.html" class="nav-links">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="productos.html" class="nav-links">Productos</a>
+                    </li>
+                    <li>
+                        <a href="Turnos.html" class="nav-links">Turnos</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+        <main>
+        <section>
+            <h2 id="serviciosbody">Turnos</h2>
+            <h3>Tu mascota merece una gran atención!</h3>
+        </section>
+ <!-- "Turnos" -->
+<section class="formulario-container">
+    <p>Seleccione su turno</p>
+    <div>
+        <select name="tipodeturno" id="tipodeturno">
+            <option value="castracion">
+                Castraciones               
+            </option>
+            <option value="veterinaria">                              
+                Veterinaria
+            </option>
+            <option value="Peluquería">
+            Peluquería
+            </option>
+            <option value="Vacunación">
+                Vacunación
+            </option>
+            <option value="Adopciones">
+                Adopciones
+             </option>
+        </select>
+    </div>
+                <div>
+                    <form action="Turnos.html" onsubmit = "return validarDatos()">
+                    <label for="">Nombre:</label>
+                    <input type="text" name="Nombre" id="nombre" placeholder="Laura" required>
+                </div>
+                <div>
+                <label for="">Apellido:</label>
+                <input type="text" name="Apellido" id="apellido" placeholder="Gonzalez" maxlength="10">
+                </div>
+                <div>
+                <label for="">Edad:</label> 
+                <input type="number" name="edad" id="edad" placeholder="1" min="0" >
+                </div>
+                <div>
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="LauraGonzalez@gmail.com" required>
+                </div>
+                <div>
+                <label for="">Nombre mascota:</label>
+               <input type="text" name="Nombredemascota" id="nombredemascota" placeholder="Morcilla" required>
+                </div>               
+                <div>
+                    <label for="genero">seleccione gènero:</label>
+                    <select name="genero" id=">
+                    <option value=""></option>
+                    <option value="M">M</option>
+                    <option value="H">H</option>
+                </div>
+                <div id="campos"></div>
+            <div>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="borrar">
+            </div>
+</section>
+ </main>
+<footer>
+    <div class="contenedor-foot">
+        <div class="box-foot-1">
+            <h4> Encontranos en </h4>
+            <h6> Avenidas Siempre Vivas 123</h6>
+            <h6> Buenos Aires </h6>
+        </div>
+        <div class="box-foot-2">
+            <span> © Grupo 1 - 2024 </span>
+        </div>
+        <div class="box-foot-3">
+            <h4>Nuestras Redes</h4>
+            <div class="redes-sociales">
+               <a href="http://instagram.com/"><img src="../STATIC/IMG/iconos/instagram.png" alt="" width="20" height="20"></a>
+               <a href="http://facebook.com/"><img src="../STATIC/IMG/iconos/facebook.png" alt="" width="20" height="20"></a>
+               <a href="http://whatsapp.com/"><img src="../STATIC/IMG/iconos/whatsapp.png" alt="" width="20" height="20"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../STATIC/js/turnos.js"></script>
+</body>
+</html>

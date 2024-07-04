@@ -1,0 +1,6 @@
+. index. html   - navbar Privado
+                - INICIAR SESION// Privado => TABLA H4P
+
+
+. Pendientes.
+ALERTA al enviar Formulario, en TURNOS!
